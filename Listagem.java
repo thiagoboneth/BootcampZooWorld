@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Listagem {
 
-    public void mostraPaciente() throws IOException, ClassNotFoundException {
+    public void mostraPaciente() throws IOException{
 
         Scanner scanner = new Scanner(new FileReader("Paciente.txt")).useDelimiter("\\n");
         while (scanner.hasNext()) {
@@ -12,7 +12,7 @@ public class Listagem {
         }
 
     }
-    public void mostraconsulta() throws IOException, ClassNotFoundException {
+    public void mostraconsulta() throws IOException{
 
         Scanner scanner = new Scanner(new FileReader("Consulta.txt")).useDelimiter("\\n");
         while (scanner.hasNext()) {
@@ -21,7 +21,7 @@ public class Listagem {
         }
 
     }
-    public void mostraProprietario() throws IOException, ClassNotFoundException {
+    public void mostraProprietario() throws IOException {
 
         Scanner scanner = new Scanner(new FileReader("Proprietario.txt")).useDelimiter("\\n");
         while (scanner.hasNext()) {
@@ -30,7 +30,7 @@ public class Listagem {
         }
 
     }
-    public void mostraVeterinario() throws IOException, ClassNotFoundException {
+    public void mostraVeterinario() throws IOException{
 
         Scanner scanner = new Scanner(new FileReader("Paciente.txt")).useDelimiter("\\n");
         while (scanner.hasNext()) {
