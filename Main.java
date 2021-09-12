@@ -12,7 +12,7 @@ public class Main {
             cadastro.cadastraMedico("987.654.321-30","Thiago","Boneth","242527","Animais De Domesticos");
             cadastro.cadastraPaciente(1,"Cachorro","25/10/95","Bigão", "Caramelo","523.564.235-20");
             cadastro.cadastraProprietario("523.564.235-20","Geraldo","Gomes","24/10/82","Rua da rua","48988006598");
-
+            cadastro.EscreveConsulta(1,"987.654.321-30","12/09/20201","16:20","Pulga","Banho com sabonete anti-pulga");
         }catch (IOException e){
             System.out.println("Erro");
         }

@@ -71,6 +71,7 @@ public class Paciente {
                 ", dataDeNascimento='" + dataDeNascimento + '\'' +
                 ", nome='" + nome + '\'' +
                 ", cor='" + cor + '\'' +
+                ", cpfProprietario='" + cpfProprietario + '\'' +
                 '}';
     }
 }

@@ -37,5 +37,16 @@ public class Cadastro {
         bw.newLine();
         bw.close();
     }
+    public void EscreveConsulta(Integer idPaciente, String cpfVeterinario, String dataConsulta, String horaConsulta, String diagnostico, String tratamento) throws IOException {
+
+        CriaConsulta criaConsulta = new CriaConsulta(idPaciente, cpfVeterinario, dataConsulta, horaConsulta, diagnostico, tratamento);
+        FileOutputStream escreveVeterinario = new FileOutputStream("Consulta.txt", true);
+        OutputStreamWriter gerarLista = new OutputStreamWriter(escreveVeterinario);
+        BufferedWriter bw = new BufferedWriter(gerarLista);
+
+        bw.append(criaConsulta.toString());
+        bw.newLine();
+        bw.close();
+    }
 
 }
